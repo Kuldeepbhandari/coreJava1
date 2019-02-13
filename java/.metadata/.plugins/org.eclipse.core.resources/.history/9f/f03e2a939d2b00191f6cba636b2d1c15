@@ -1,0 +1,15 @@
+
+public class UserGuess {
+public static void show()
+{
+  String secretCode="53560";
+	
+}
+public void guesses(int num)
+{
+	for(int i=1;i<10;i++)
+	{
+		
+	}
+}
+}

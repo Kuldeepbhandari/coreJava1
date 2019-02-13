@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+
+public class GradesStatistics {
+	
+	public static void show(String []args){
+Scanner s=new Scanner(System.in);
+System.out.println("Enter The no of Students");
+int size=s.nextInt();
+int grades[]=new int[size];
+System.out.println("Enter The Student Grades");
+
+for(int i=0;i<grades.length;i++){
+ 
+grades[i]=s.nextInt();
+}
+	}
+	public static void readGrades(int []grades)
+	{
+		
+	}
+	public static void sum(int[] grades){
+		int sum=0;
+	for(int i=0;i<grades.length;i++)
+	{
+		sum=sum+grades[i];
+	}
+	System.out.println(sum);
+		
+	}
+}

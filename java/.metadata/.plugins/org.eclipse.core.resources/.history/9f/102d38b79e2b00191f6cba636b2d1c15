@@ -1,0 +1,26 @@
+package AssingmentDay1;
+
+import java.text.DecimalFormat;
+
+public class SumOnlyPrimeAndOdd {
+ public static void show()
+ {    int evenSum=0;
+ 
+ double count=0;
+ 
+ double evenAvg=0;
+ 
+ DecimalFormat df=new DecimalFormat("00.0000");
+	 for(int i=1;i<1000;i++) {
+		 if(i%2==0&& i%2==1){
+			 evenSum+=i;
+			 count++;
+		 }
+		 
+	 }
+	 System.out.println("The sum of Even No is"+evenSum);
+	 evenAvg=(double)evenSum/count;
+	System.out.println(evenAvg);
+ 
+}
+}

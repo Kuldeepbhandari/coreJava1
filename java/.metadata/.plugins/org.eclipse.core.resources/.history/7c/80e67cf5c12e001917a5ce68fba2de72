@@ -1,0 +1,39 @@
+import java.io.FileNotFoundException;
+
+
+public class AppMain {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+  // *********************** GradeAverage ************************************
+		/*System.out.println("********************** GradeAverage ***********************");
+		GradeAverage.readFromTextFile("in.txt");*/
+		
+		//************************** StringSum ***********************
+		/*System.out.println("************************** StringSum ********************");
+		StringSum.sum(args);*/
+		
+		// *********************** StringRevArray *********************************
+		System.out.println("*********************** StringRevArray ********************");
+		StringRevArray.show(args);
+		
+		//********************* GradesStatistics **********************
+		/*System.out.println("****************** GradesStatistics ****************");
+		GradesStatistics.acceptGradees();;
+		System.out.println(GradesStatistics.sum());
+		System.out.println(GradesStatistics.average());
+		GradesStatistics.max();
+		GradesStatistics.stdDev();*/
+		
+		//************************* GradeHistoGram *******************************
+		/*System.out.println("********************** GradeHistoGram *****************************");
+		GradeHistoGram.readGrades("grades.in");
+		GradeHistoGram.printHistogramVertical();*/
+		
+		// ***************************** ReverseArrayMethod ********************************
+		/*System.out.println("*********************** ReverseArrayMethod ***************************");
+		ReverseArrayMethod.reverseArray();*/
+		
+	}
+
+}

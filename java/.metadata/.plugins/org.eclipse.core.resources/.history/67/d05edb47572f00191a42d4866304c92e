@@ -1,0 +1,12 @@
+
+public class AppMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		//*********************** PrintPatternA*************************
+		System.out.println("************************* PrintPatternA**********************");
+		PrintPatternsA.Pattern();
+	}
+
+}

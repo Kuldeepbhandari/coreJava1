@@ -1,0 +1,16 @@
+package AssingmentDay1;
+
+public class HarmonicSum {
+   public static void show()
+   {
+	   int maxDenominator=5000;
+	   double sumLTR=0.0;
+	   double sumRTL=0.0;
+	   int Denominator=1;
+	   for(int i=1;i<=maxDenominator;i++)
+	   {
+		   sumLTR=Denominator/i;
+	   }
+	   System.out.println("The Sum Of No is "+sumLTR);
+   }
+}

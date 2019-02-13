@@ -1,0 +1,11 @@
+package AssingmentDay1;
+
+import java.util.Scanner;
+
+public class Product1ToN {
+
+	Scanner s=new Scanner(System.in);
+	
+	
+	
+}

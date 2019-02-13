@@ -1,0 +1,22 @@
+import java.io.FileNotFoundException;
+
+
+public class AppMain {
+
+	public static void main(String[] args) throws FileNotFoundException {
+		// TODO Auto-generated method stub
+  // *********************** GradeAverage ************************************
+		/*System.out.println("********************** GradeAverage ***********************");
+		GradeAverage.readFromTextFile("in.txt");*/
+		
+		//************************** StringSum ***********************
+		/*System.out.println("************************** StringSum ********************");
+		StringSum.sum();*/
+		
+		//********************* GradesStatistics **********************
+		System.out.println("****************** GradesStatistics ****************");
+		GradesStatistics.acceptGradees();;
+		GradesStatistics.sum();
+	}
+
+}

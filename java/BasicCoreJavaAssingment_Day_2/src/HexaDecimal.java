@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+
+public class HexaDecimal {
+	public static int getNumericValue(char ch)
+	{
+		switch(ch)
+		{
+	case 'a':
+	return 10;
+	case 'b':
+	return 11;
+	case 'c':
+	return 12;
+	case 'd':
+	return 13;
+	case 'e':
+	return 14;
+	case 'f':
+	return 15;
+	default :
+		return ch-'0';
+		}
+	}
+	
+	public static void display() {
+		
+		int sum=0;
+		int k=0;
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter the value");
+		String num=s.next();
+		for(int i=num.length()-1; i>=0;i--){
+		//System.out.println(HexaDecimal.getNumericValue(num.charAt(i)));
+			//System.out.println((char)num.charAt(i));
+			sum+=Math.pow(16,i)*(HexaDecimal.getNumericValue(num.charAt(num.length()-i-1)));
+		}
+		System.out.println(sum);
+	}
+	
+}

@@ -1,0 +1,12 @@
+                  Difference Between For and while-do
+                  
+				1.The for loop is used for when we know the how many time loop is
+				 executed in that condition we used for loop
+				2.The while loop is executed when we don't know the how many times loop 
+				will be executed in that condition we used while loop	
+		
+					//Difference between do-while and while-do
+		//1.In While do first we check the condition after that we increment
+		 the value
+		//2.In Do- While First we increment the value then we Check condition
+		

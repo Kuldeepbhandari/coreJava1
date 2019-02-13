@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+
+public class GradesStatistics {
+	public static int[]grades;
+	public static void show(){
+Scanner s=new Scanner(System.in);
+System.out.println("Enter The No Of Student");
+int student=s.nextInt();
+System.out.println("Enter the First Student Grades");
+int grades1=s.nextInt();
+System.out.println("Enter The Second Student Grades");
+int grades2=s.nextInt();
+System.out.println("Enter The Third Stduent Grades");
+int grades3=s.nextInt();
+System.out.println("Enter The Fourth Student Grades");
+int grades4=s.nextInt();
+}
+	public static void readGrades()
+	{
+		int grades[]=
+	}
+}

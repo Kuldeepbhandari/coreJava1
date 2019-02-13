@@ -1,0 +1,13 @@
+package AssingmentDay1;
+
+public class SumOfTheSquare {
+    public static void show()
+    { 
+    	int squr=0;
+    	for(int i=1;i<=100;i++)
+    	{
+    		squr=i*i;
+    	}
+    	System.out.println(squr);
+    }
+}

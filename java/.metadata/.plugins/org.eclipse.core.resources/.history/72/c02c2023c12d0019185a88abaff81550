@@ -1,0 +1,47 @@
+package AssingmentDay1;
+
+import java.util.Scanner;
+
+public class CozaLozaWoza {
+	public static void show()
+	{
+		/*Scanner s=new Scanner(System.in);
+		System.out.println("Enter a value");
+		int num=s.nextInt();
+	*/
+		int num=110;
+			 
+			for(int j=1;j<=num;j++)
+			{
+				 if(num%5==0&& num%7==0){
+					System.out.print("CozaWoza");	
+					break;
+					
+				}
+				else if(num%3==0&&num%5==0){
+					System.out.print("CozaLoza");
+					break;
+				}
+					else if(num%3==0){
+				System.out.print("coza");
+				break;
+					}
+					else if(num%5==0){
+				System.out.print("Loza");
+				break;
+					}
+					else if(num%7==0){
+				System.out.print("Woza");
+				break;
+					}
+					else if(num%3!=0||num%5!=0||num%7!=0){
+					System.out.print(num);
+					break;
+					}
+					else{
+				System.out.println("choose no between 1 to 110");
+					}
+					}
+		}
+	}
+

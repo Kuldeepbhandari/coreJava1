@@ -1,0 +1,22 @@
+
+public class StringSum {
+	public static void sum(String args[])
+	{
+		String string=args[0];
+		int sum=0;
+		int num=Integer.parseInt(string);
+		int index=0;
+		while(num%10==0)
+		{	sum+=num;
+			System.out.println("The Sum of digit is = "+num +""+sum);
+		}
+		/*for(int j=0;j<=string.length()-1;j++)
+		{
+			System.out.println(string.concat(string));
+			
+		}*/
+	
+		
+	}
+
+}

@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+
+public class Binary2Octal {
+
+	
+	double base=2;
+	
+public void show(String bin){
+	StringBuilder sb=new StringBuilder();
+	for(int i=bin.length()-1;i>=0;i--)
+	{
+		if(bin=="0" && bin=="1")
+		{
+			sb.append(bin);
+		}
+		else{
+			System.out.println("Enter only 1 and 0 number");
+		}
+	}
+	System.out.println(bin);
+}
+
+}

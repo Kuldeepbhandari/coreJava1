@@ -1,0 +1,20 @@
+package AssingmentDay1;
+
+public class SumOnlyPrimeAndOdd {
+ public static void show()
+ {    int evenSum=0;
+ int count=0;
+ int avg=0;
+	 for(int i=1;i<1000;i++)
+	 {
+		 if(i%2==0)
+		 {
+			 evenSum+=i;
+			 count++;
+		 }
+		
+	 }
+	 System.out.println("The sum of Even No is"+evenSum);
+	 System.out.println("The Average of Even No is "+evenSum/count);
+ }
+}

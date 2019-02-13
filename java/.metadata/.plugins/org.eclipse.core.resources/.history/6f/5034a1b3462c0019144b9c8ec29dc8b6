@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+
+public class UserGuess {
+
+  
+  int max=10;
+  
+  public static void show()
+  {
+	  String  secretCode="53560";
+	  Scanner s=new Scanner(System.in);
+	  String num=s.next();
+	  int sum=0;
+		for(int i=0;i<=secretCode.length()-1;i++)
+		{
+			
+				if(secretCode.charAt(i)==num.charAt(i))
+				{
+					sum=secretCode.charAt(i)+num.charAt(i);
+				}
+				else
+				{
+					
+				}
+			
+		}
+		System.out.println(sum);
+	  
+  }
+
+}

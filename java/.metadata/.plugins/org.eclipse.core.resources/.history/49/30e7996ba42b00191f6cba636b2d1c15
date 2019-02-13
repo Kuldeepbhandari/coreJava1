@@ -1,0 +1,30 @@
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.Scanner;
+
+
+public class FileScanner {
+	public static void show() throws IOException
+	{
+		String num="";
+		int sum1=0;
+		int sum=0;
+		File f=new File("input.txt");
+		Scanner s=new Scanner(f);
+		{
+			while(s.hasNext())
+			{
+				System.out.println(num=s.next());	
+			}
+			sum1=Integer.parseInt(num);
+			System.out.println(sum=sum1*sum1);
+		}
+		}
+	}
+

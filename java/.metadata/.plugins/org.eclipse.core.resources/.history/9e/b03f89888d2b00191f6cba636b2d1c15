@@ -1,0 +1,19 @@
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+
+
+public class FileScanner {
+	public static void show(String name) throws FileNotFoundException
+	{
+		FileInputStream fi=new FileInputStream(name);
+		InputStreamReader input=new InputStreamReader(fi);
+		BufferedReader br=new BufferedReader("in.txt");
+			
+			
+		}
+	}
+

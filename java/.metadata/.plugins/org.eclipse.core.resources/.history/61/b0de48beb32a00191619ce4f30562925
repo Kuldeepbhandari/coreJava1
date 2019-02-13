@@ -1,0 +1,46 @@
+package AssingmentDay1;
+
+public class SumAndAverage {
+	
+	public static void show(){
+		int sum=0;
+		int upparBound=100;
+		int lowerBound=1;
+		int number=lowerBound;
+		
+		/*for(int i=number;i<=upparBound;i++)
+		{
+			sum+=i;
+		}
+		System.out.println("Sum of No 1 t0 100 is "+sum);
+		double avg=(double)sum/100;
+		System.out.println("Average of No 1 to 100 is "+avg);*/
+		
+					//using while - do loop
+		
+		
+		/*while(number<=upparBound){
+			sum+=number;
+			number++;
+		}
+		System.out.println("The Sum Of No Is "+sum);
+		double avg=(double)sum/100;
+		System.out.println("Average of No 1 to 100 is "+avg);
+		*/
+					//using do-while loop
+		
+		do
+		{
+			sum+=number;
+			number++;
+		}
+		while(number<=upparBound);
+		
+			System.out.println("The Sum Of Number is "+sum);
+			double avg=(double)sum/100;
+			System.out.println("Average of No 1 to 100 is "+avg);
+		
+		
+	}
+
+}

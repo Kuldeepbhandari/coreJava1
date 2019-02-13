@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+
+public class MakeMiddle {
+public static void makeMiddle()
+{
+	Scanner s=new Scanner(System.in);
+	System.out.println("Enter The Arry Length");
+	int[] len=new int[s.nextInt()];
+	int size=len.length;
+	
+	
+}
+}

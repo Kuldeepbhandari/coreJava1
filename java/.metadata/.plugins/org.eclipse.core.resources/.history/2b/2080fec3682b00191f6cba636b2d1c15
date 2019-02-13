@@ -1,0 +1,28 @@
+package AssingmentDay1;
+
+public class CheckerBoard {
+  public static void show()
+  {
+	  int size=7;
+	  for(int i=1;i<=size;i++)
+	  {
+		  if(i%2==0)
+		  {
+			  System.out.print(" 0 ");
+			  
+		  }
+		  else
+		  {
+			  System.out.print(" 1 ");
+			  
+		  for(int j=0;j<size;j++)
+		  {
+			 
+			 /* else if(i+j%2==1)
+			  {
+				  System.out.print("0");
+			  }*/
+		  }
+	  }
+  }
+}

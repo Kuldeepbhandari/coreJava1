@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+
+public class TestPalindromicPhrase {
+ public static void display(String str) {
+	// TODO Auto-generated method stub
+	int vowels=0;
+	int consonant=0;	
+	str=str.toLowerCase();
+	for(int i=0;i<str.length();i++){
+		char ch=str.charAt(i);
+		if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u')
+		{
+			vowels++;
+		}
+		else if(ch>='a' && ch<='z')
+		{
+			consonant++;
+		}
+}
+	System.out.println("The vowels in string "+vowels);
+	System.out.println("The consonant in string is "+consonant);
+}
+public void palindrome(String str)
+{
+	StringBuilder rev=new StringBuilder();
+	 for(int i=str.length()-1;i>=0;i--){
+		 rev.append(str.charAt(i)); 
+	 }
+	 if(str.contentEquals(rev)){
+		 System.out.println("String is palindrome " );
+	 }
+	 else{
+		 System.out.println("String is not palindrome");
+	 }
+	 System.out.println("The Reverse String is "+rev);
+}
+}

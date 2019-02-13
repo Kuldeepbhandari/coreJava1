@@ -1,0 +1,21 @@
+package AssingmentDay1;
+
+public class AppMain {
+
+	public static void main(String[] args) {
+		/*System.out.println("********** Ans Check Grade ****************");
+		CheckGrade.display();*/
+		
+		
+		/*System.out.println("********** Ans Even Odd ****************");
+		CheckEvenOdd.show();
+		*/
+		
+		/*System.out.println("********** Ans Sum And Average ****************");
+		SumAndAverage.show();*/
+		
+		
+		System.out.println("********** Ans Sum And Average ****************");
+	}
+
+}

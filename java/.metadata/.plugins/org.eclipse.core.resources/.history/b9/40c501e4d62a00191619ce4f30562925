@@ -1,0 +1,17 @@
+package AssingmentDay1;
+
+import java.util.Scanner;
+
+public class Fibonacci {
+public static void fac()
+{
+	Scanner s=new Scanner(System.in);
+	System.out.println("Enter the no");
+	int fn=s.nextInt();
+	int a=0;
+	int b=1;
+	
+	
+	
+}
+}

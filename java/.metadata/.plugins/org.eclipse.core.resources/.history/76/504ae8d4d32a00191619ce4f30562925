@@ -1,0 +1,22 @@
+package AssingmentDay1;
+
+import java.util.Scanner;
+
+public class Fibonacci {
+public static void fac()
+{
+	/*Scanner s=new Scanner(System.in);
+	System.out.println("Enter the no");
+	int fn=s.nextInt();*/
+	int fn;
+	int fn1=1;
+	int fn2=1;
+	int max=20;
+	int sum=0;
+	for(int i=3;i<max;i++){
+		fn2=fn1+fn2;
+		sum=sum+fn2;
+	}
+	System.out.println(" "+fn2+""+sum);
+}
+}

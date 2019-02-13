@@ -1,0 +1,16 @@
+package AssingmentDay1;
+
+public class SumOfTheSquare {
+    public static void show()
+    { 
+    	int squr=0;
+    	int num=0;
+    	for(int i=1;i<=100;i++)
+    	{
+    		squr=i*i;
+    		num+=squr;
+    		System.out.print(squr+" "+num);
+    	}
+    	System.out.println(num);
+    }
+}

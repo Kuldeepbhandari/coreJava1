@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+
+public class GradesStatistics {
+static	int grades[];
+static int sum=0;
+	public static void acceptGradees(){
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter The no of Students");
+		int size=s.nextInt();
+		grades=new int[size];
+		System.out.println("Enter The Student Grades");
+
+		for(int i=0;i<grades.length;i++){
+
+			grades[i]=s.nextInt();
+		}
+	}
+	public static int  sum(){
+		
+		for(int i=0;i<grades.length;i++){   
+			sum=sum+grades[i];
+		}
+		//System.out.println(sum);
+      return sum;
+	}
+	public static void average(){
+		double avg=(double)sum/grades.length;
+		System.out.println("The avg of no is "+avg);
+	}
+	
+}

@@ -9,7 +9,6 @@ public class PrintPatternK {
 		int num=s.nextInt();
 		for(int i=1;i<=num;i++)
 		{
-			
 			for(int j=1;j<=i;j++)
 			{
 				System.out.print(j);
@@ -21,8 +20,8 @@ public class PrintPatternK {
 				System.out.print(" ");
 				}
 			for(int m=i;m>=1;m--)
-			{
-				System.out.print(m);
+			{  
+				System.out.print(m);		
 			}
 			System.out.println("");
 		}

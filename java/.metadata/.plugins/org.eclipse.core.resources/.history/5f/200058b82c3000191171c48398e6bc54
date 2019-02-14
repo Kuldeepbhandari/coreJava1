@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+
+public class PascalTriangle2 {
+public static void pattern()
+{
+	Scanner s=new Scanner(System.in);
+	System.out.println("Enter The Value");
+	int num=s.nextInt();
+	for(int i=0;i<num;i++)
+	{
+		for(int j=0;j<num;j++)
+		{
+			System.out.print(Math.pow(11, j));
+		}
+		System.out.println("");
+	}
+}
+}

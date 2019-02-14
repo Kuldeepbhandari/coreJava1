@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+
+public class PrintPatternL {
+public static void Pattern()
+{
+	Scanner s=new Scanner(System.in);
+	System.out.println("Enter The Value");
+	int num=s.nextInt();
+	
+	for(int i=num;i>=1;i--)
+	{
+		for(int k=1;k<=num;k++)
+		{if((i+k)<=num+1)
+		{
+			System.out.print(k+"\t");
+		}
+		else
+		{
+			System.out.print("\t");
+		}
+		}
+			
+			
+			System.out.println("");
+		}
+		
+	
+	}
+}
+

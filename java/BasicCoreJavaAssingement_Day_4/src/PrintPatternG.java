@@ -11,9 +11,13 @@ public static void pattern()
 	{ int mid=num/2;
 		for(int j=1;j<=num;j++)
 		{
-			if( i==num|| i==1 ||i==mid+1 || ( i<=mid &&j<=2*i-1 ) || (i>mid && j) )
+			if( i==num|| i==1 ||i==mid+1  )
 			{
 				System.out.print("#");
+			}
+			else if(( i<=mid &&j<=2*i-1 ))
+			{
+				System.out.print("  #");
 			}
 			{
 				System.out.print(" ");

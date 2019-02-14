@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+
+public class PowerOf2Triangle {
+
+	public static void pattern()
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter The Value");
+		int num=s.nextInt();
+		for(int i=1;i<=num;i++)
+		{
+			for(int j=num*2-1;j>i;j--)
+			{
+				System.out.print(" ");
+			}
+			for(int k=1;k<=i;k++)
+			{  
+			k=i*k;
+				System.out.print(k);
+			}
+			System.out.println("");
+		}
+	}
+}

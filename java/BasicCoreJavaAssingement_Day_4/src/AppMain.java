@@ -3,7 +3,11 @@ public class AppMain {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		//************************* PrintAnimalPattern ****************
+				/*System.out.println("********************** PrintAnimalPattern ******************");
+				PrintAnimalPattern.pattern();*/
+		
+		
 		//*********************** PrintPatternA*************************
 		/*System.out.println("************************* PrintPatternA**********************");
 		PrintPatternsA.Pattern();*/
@@ -29,8 +33,8 @@ public class AppMain {
 		PrintPatternF.pattern();*/
 		
 		//***************************** PrintPatternG ******************
-				System.out.println("******************** PrintPatternG *******************");
-				PrintPatternG.pattern();
+				/*System.out.println("******************** PrintPatternG *******************");
+				PrintPatternG.pattern();*/
 		
 		//************************* PrintPatternH ****************
 		/*System.out.println("********************** PrintPatternH ******************");
@@ -48,12 +52,26 @@ public class AppMain {
 		
 				//************************* PrintPatternK ****************
 				/*System.out.println("********************** PrintPatternK ******************");
-				PrintPatternK.Pattern();*/
-	
+				PrintPatternK.Pattern();
+	*/
 				
 				//************************* PrintPatternL ****************
 				/*System.out.println("********************** PrintPatternL ******************");
-				PrintPatternL.pattern();*/
+				PrintPatternL.Pattern();*/
+		
+		
+		//************************* PowerOf2Triangle ****************
+		/*System.out.println("********************** PowerOf2Triangle ******************");
+		PowerOf2Triangle.pattern();*/
+		
+		//************************* PascalTriangle2 ****************
+				/*System.out.println("********************** PascalTriangle2 ******************");
+				PascalTriangle2.pattern();
+				*/
+				//************************* PascalTriangle1 ****************
+				System.out.println("********************** PascalTriangle1 ******************");
+				PascalTriangle1.pattern();
+				
 		
 	
 	}

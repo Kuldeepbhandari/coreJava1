@@ -2,23 +2,36 @@ import java.util.Scanner;
 
 
 public class PrintPatternL {
-	public static void pattern()
+public static void Pattern()
+{
+	Scanner s=new Scanner(System.in);
+	System.out.println("Enter The Value");
+	int num=s.nextInt();
+	
+	for(int i=0;i<=num;i++)
 	{
-		Scanner s=new Scanner(System.in);
-		System.out.println("Enter The Value");
-		int num=s.nextInt();
-		for(int i=1;i<=num;i++)
+		for(int j=num;j>0;i--)
+		{ if((i+j)<=num)
+			System.out.print(j+"\t");
+		else
+			System.out.print("\t");
+		}
+		
+		/*{if((i+k)<=num+1)
 		{
-			for(int k=num;k>i;k--)
-			{
-				System.out.print(" ");
-			}
-			for(int j=i;j<=2*i-1;j++)
-			{ //if()
-				System.out.print(j);
-			}
+			System.out.print(k+"\t");
+		}
+		else
+		{
+			System.out.print("\t");
+		}
+		}*/
+			
+			
 			System.out.println("");
 		}
+		
+	
 	}
-
 }
+

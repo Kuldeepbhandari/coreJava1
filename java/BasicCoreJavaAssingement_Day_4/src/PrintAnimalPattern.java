@@ -15,13 +15,11 @@ public static void pattern()
 	 System.out.print(num.charAt(i));
 	 break;
 		}
-		for(int j=0;j<len;j++)
-		{
+		for(int j=0;j<len;j++){
 			if( (i>0 && i==j) || ( j==len-1-i && i<len-1 )){
 				System.out.print("*");
 			}
-			else
-			{
+			else{
 				System.out.print(" ");
 			}
 		}

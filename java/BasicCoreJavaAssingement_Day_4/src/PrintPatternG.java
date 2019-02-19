@@ -15,13 +15,22 @@ public static void pattern()
 			{
 				System.out.print("#");
 			}
-			else if(( i<=mid &&j<=2*i-1 ))
+			for(int k=i;k<=i;k++)
 			{
-				System.out.print("  #");
+				if((i==2&& j>=5&& j<=7)){
+					System.out.print("#");
+				}
+					else{
+						System.out.print(" ");
+				}
+			}
+			/*else if(( i<=mid &&j<=2*i-1 ))
+			{
+				System.out.print("#");
 			}
 			{
 				System.out.print(" ");
-			}
+			}*/
 		}
 		System.out.println(" ");
 	}

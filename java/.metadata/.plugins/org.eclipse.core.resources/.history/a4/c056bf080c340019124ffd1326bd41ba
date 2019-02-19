@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+
+public class NumberGusess {
+ 
+	public static void guess(int gusessNo)
+	{
+		int secretNo=(int)Math.random()*100;
+		Scanner s=new Scanner(System.in);
+		//System.out.println("Enter Your Guess no");
+		 gusessNo=s.nextInt();
+		  int trials=0;
+		for(int i=1;i<=4;i++)
+		{ trials++;
+			if(gusessNo<secretNo)
+			{
+				System.out.println("Try Higher");
+			}
+			else if(gusessNo>secretNo)
+			{
+				System.out.print("Try Lower");
+			}
+			else if(gusessNo==secretNo)
+			{
+				System.out.println("You got "+trials);
+			}
+		}
+		 System.out.println(secretNo);
+	}
+}

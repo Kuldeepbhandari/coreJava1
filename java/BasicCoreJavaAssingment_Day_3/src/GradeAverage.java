@@ -5,8 +5,7 @@ import java.util.Scanner;
 
 public class GradeAverage {
 
-	public static void readFromTextFile(String fileName) throws FileNotFoundException
-	{
+	public static void readFromTextFile(String fileName) throws FileNotFoundException{
 		int num[]=new int[15];
 		int sum=0;
 		int temp=0;
@@ -18,15 +17,12 @@ public class GradeAverage {
 		num[index]=Integer.parseInt(s.next());
 		index++;
 	}
-	for(int i=0;i<num.length-1;i++)
-	{
+	for(int i=0;i<num.length-1;i++){
 	sum=num[i]+num[i+1];
 	temp=sum+temp;
-	
 	}
 	System.out.println("The sum of no is "+temp);
 	double avg=temp/numStudents.length;
 	System.out.println("The average of no is "+avg);
-	
 	}
 }

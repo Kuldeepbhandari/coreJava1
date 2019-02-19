@@ -7,6 +7,6 @@
 <listEntry value="1"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="AppMain"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="ab bc cd ed"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="12345"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="BasicCoreJavaAssingment_Day_3"/>
 </launchConfiguration>

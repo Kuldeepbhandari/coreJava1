@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+
+public class StringOpeartion {
+
+	public static void show()
+	{
+	 String rev="";
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter a String");
+		String str=s.next();
+		for(int i=0;i<str.length();i++)
+		{
+			 rev=rev+str.charAt(i);
+			
+		}
+		System.out.println(rev);
+	}
+	public static void main(String[] args) {
+		StringOpeartion.show();
+	}
+}

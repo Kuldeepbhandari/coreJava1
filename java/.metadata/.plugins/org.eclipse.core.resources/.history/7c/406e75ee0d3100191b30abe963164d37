@@ -1,0 +1,27 @@
+package com.numbersystem.main;
+
+import java.util.Scanner;
+
+import com.numberconvert.util.Binary2Decimal;
+import com.numberconvert.util.NumberValidator;
+
+public class NumberSystemMain {
+	String bin;
+	static Scanner s=new Scanner(System.in);
+	public static void number( String bin){
+	System.out.println("Enter the binary value");
+	bin=s.next();
+	Binary2Decimal bo=new Binary2Decimal();
+	bo.show(bin);
+	}
+	private static int getNumber()
+	{
+		String bin=s.nextLine();
+		if(!NumberValidator.isNumber(bin))
+			
+		return getNumber();
+		return Integer.parseInt(bin);
+		
+	}
+	}
+

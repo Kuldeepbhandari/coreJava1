@@ -1,0 +1,12 @@
+
+public class AppMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		NumberGusess.guess(1);
+		
+		// *************************** Fibonacci *********************
+		System.out.println("******************* Fibonacci **********************");
+	}
+
+}

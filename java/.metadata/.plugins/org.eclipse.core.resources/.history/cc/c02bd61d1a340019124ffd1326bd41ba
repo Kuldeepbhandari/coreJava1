@@ -1,0 +1,9 @@
+
+public class GetFact {
+
+	public static int getFact()
+	{
+		return 0;
+		
+	}
+}

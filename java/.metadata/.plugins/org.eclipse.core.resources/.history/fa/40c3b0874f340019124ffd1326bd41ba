@@ -1,0 +1,77 @@
+import java.util.Scanner;
+
+
+public class NumberThoery {
+
+	
+	/*public static boolean isPerfect(int num){
+		int sum=0;
+		for(int i=1;i<num;i++){
+			if(num%i==0)
+				sum +=i;
+		}
+		return sum==num;
+	}*/
+	/*public static boolean isDeficient(int num){
+		int sum=0;
+		for(int i=1;i<num;i++){
+			if(num%i==0){
+				sum+=i;	
+			}
+				if(sum<num){
+				System.out.println("");
+				}
+					
+			}
+			
+		}
+		
+		return false;
+		
+	}*/
+
+public static void isDeficient(int num)
+{
+	int a=0;
+
+	int sum=0;
+	for(int i=1;i<num;i++){
+		if(num%i==0)
+			sum +=i;
+		if(num%i==0&& sum<num){
+			a=i;
+		}
+			System.out.println(a);
+			/*if( && num%i==0)
+			{
+				System.out.println(sum);
+			}*/
+			
+		}
+	
+
+
+	/*public static void printPerfectList(int uperLimit){
+		int count=0;
+		for(int i=1;i<=uperLimit;i++){
+			if(isPerfect(i)){
+				System.out.print(i+" ");
+				count++;
+			}
+		}
+		System.out.println("Perfect No Found Percentage is  "+((double)count/uperLimit)*100);
+	}*/
+
+	/*public static void printisDeficient(int uperLimit)
+	{
+		for(int i=1;i<=uperLimit;i++){
+			if(isDeficient(i)){
+				//System.out.print(i +" ");
+			}
+		}
+	}*/
+}
+}
+
+
+		

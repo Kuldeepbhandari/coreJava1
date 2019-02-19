@@ -1,0 +1,14 @@
+import java.util.Scanner;
+
+
+public class NumberGusess {
+ 
+	public static void guess(int num)
+	{
+		Scanner s=new Scanner(System.in);
+		System.out.println("Enter Your Guess no");
+		 num=s.nextInt();
+		 int secretNo= (int)Math.random()*100;
+		 System.out.println(secretNo);
+	}
+}

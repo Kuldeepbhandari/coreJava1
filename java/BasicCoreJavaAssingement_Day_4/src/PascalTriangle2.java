@@ -9,13 +9,13 @@ public static void pattern()
 	int num=s.nextInt();
 	for(int i=0;i<num;i++)
 	{
-		for(int j=num-1;j>i;j--)
+		for(int j=num*2-1;j>i;j--)
 		{
 			System.out.print(" ");
 		}
 		for(int j=i;j<=i;j++)
 		{
-			System.out.print((int)Math.pow(11, j));
+			System.out.print((int)Math.pow(11, j)+" ");
 		}
 		System.out.println("");
 	}

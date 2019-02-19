@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+
+public class DynamicMatrix {
+ public static void show()
+ {
+	Scanner s=new Scanner(System.in);
+	System.out.println("Enter An array");
+	int i=0;
+	int j=0;
+	System.out.println(" Enter the row"); 
+	int row=s.nextInt();
+	System.out.println("Enter the size of colum");
+	int col=s.nextInt();
+	
+	int arr[][]=new int[row][col];
+for( i=0;i<arr.length;i++)
+{
+	for (j = 0; j < arr.length; j++) {
+		arr[i][j]=s.nextInt();
+	}
+}
+ System.out.println(arr[row][col]);
+ }
+ public static void main(String[] args) {
+	 DynamicMatrix.show();
+}
+}

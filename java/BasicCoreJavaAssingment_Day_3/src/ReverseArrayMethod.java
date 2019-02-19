@@ -9,7 +9,7 @@ public static void reverseArray() throws FileNotFoundException
 	int []intArr =new int[15];
 	File f=new File ("in.txt");
 	Scanner s=new Scanner(f);
-	int intArr1[]=new int[s.nextInt()];
+	//int intArr1[]=new int[s.nextInt()];
 	int index=0;
 	while(s.hasNextInt()){
 		intArr[index]=Integer.parseInt(s.next());

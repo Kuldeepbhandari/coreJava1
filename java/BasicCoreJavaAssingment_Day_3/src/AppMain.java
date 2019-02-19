@@ -10,8 +10,8 @@ public class AppMain {
 		GradeAverage.readFromTextFile("in.txt");*/
 		
 		//************************** StringSum ***********************
-		/*System.out.println("************************** StringSum ********************");
-		StringSum.sum(args);*/
+		System.out.println("************************** StringSum ********************");
+		StringSum.sum(args);
 		
 		// *********************** StringRevArray *********************************
 		/*System.out.println("*********************** StringRevArray ********************");
@@ -35,9 +35,9 @@ public class AppMain {
 		ReverseArrayMethod.reverseArray();*/
 		
 		//******************* MakeMiddle *******************************
-		System.out.println("****************** MakeMiddle ********************");
+		/*System.out.println("****************** MakeMiddle ********************");
 		MakeMiddle.makeMiddle();
-		
+		*/
 	}
 
 }

@@ -33,8 +33,8 @@ public class AppMain {
 		PrintPatternF.pattern();*/
 		
 		//***************************** PrintPatternG ******************
-				/*System.out.println("******************** PrintPatternG *******************");
-				PrintPatternG.pattern();*/
+				System.out.println("******************** PrintPatternG *******************");
+				PrintPatternG.pattern();
 		
 		//************************* PrintPatternH ****************
 		/*System.out.println("********************** PrintPatternH ******************");
@@ -42,8 +42,8 @@ public class AppMain {
 		
 		//************************* PrintPatternI ****************
 				/*System.out.println("********************** PrintPatternI ******************");
-				PrintPatternI.Pattern();*/
-				
+				PrintPatternI.Pattern();
+				*/
 				//************************* PrintPatternJ ****************
 				/*System.out.println("********************** PrintPatternJ ******************");
 				PrintPatternJ.Pattern();*/
@@ -56,8 +56,8 @@ public class AppMain {
 	*/
 				
 				//************************* PrintPatternL ****************
-				/*System.out.println("********************** PrintPatternL ******************");
-				PrintPatternL.Pattern();*/
+				System.out.println("********************** PrintPatternL ******************");
+				PrintPatternL.Pattern();
 		
 		
 		//************************* PowerOf2Triangle ****************
@@ -66,11 +66,11 @@ public class AppMain {
 		
 		//************************* PascalTriangle2 ****************
 				/*System.out.println("********************** PascalTriangle2 ******************");
-				PascalTriangle2.pattern();
-				*/
+				PascalTriangle2.pattern();*/
+				
 				//************************* PascalTriangle1 ****************
-				System.out.println("********************** PascalTriangle1 ******************");
-				PascalTriangle1.pattern();
+				/*System.out.println("********************** PascalTriangle1 ******************");
+				PascalTriangle1.pattern();*/
 				
 		
 	

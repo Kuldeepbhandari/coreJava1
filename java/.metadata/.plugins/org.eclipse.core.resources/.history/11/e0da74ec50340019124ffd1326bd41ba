@@ -1,0 +1,5 @@
+package com.math.util;
+
+public class PrimeCheck {
+
+}

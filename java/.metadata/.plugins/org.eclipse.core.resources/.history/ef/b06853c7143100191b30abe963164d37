@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+
+public class DynamicMatrix {
+ public static void show()
+ {
+	Scanner s=new Scanner(System.in);
+	System.out.println("Enter An array");
+	int i=0;
+	int j=0;
+	int arr[][]=new int[0][];
+for( i=0;i<arr.length;i++)
+{
+	for (j = 0; j < arr.length; j++) {
+		arr[i][j]=s.nextInt();
+	}
+}
+	System.out.println(arr[i][j]);
+}
+ public static void main(String[] args) {
+	 DynamicMatrix.show();
+}
+}

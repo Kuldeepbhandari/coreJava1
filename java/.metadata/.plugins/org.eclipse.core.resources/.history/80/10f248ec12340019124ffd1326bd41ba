@@ -1,0 +1,13 @@
+package com.getfabonacci.util;
+
+public class FibonacciOverflow {
+
+	public static void overFlow(int num)
+	{
+		
+		if(num>45)
+		{
+			System.out.println("Out of range");
+		}
+	}
+}

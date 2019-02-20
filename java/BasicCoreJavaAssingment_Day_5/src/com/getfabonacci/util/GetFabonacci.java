@@ -3,7 +3,7 @@ package com.getfabonacci.util;
 import java.util.Scanner;
 
 public class GetFabonacci {
-public static int getFab(int num)
+public static boolean getFab(int num)
 {
 	int j=46;
 	int n1=0;
@@ -14,6 +14,8 @@ public static int getFab(int num)
 		n1=n2;
 		n2=sum;	
 	}
-	return n2;
+	return num==n2;
+	
 }
+
 }

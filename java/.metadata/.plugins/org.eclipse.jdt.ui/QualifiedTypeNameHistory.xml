@@ -6,7 +6,6 @@
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
 <fullyQualifiedTypeName name="java.io.FileReader"/>
 <fullyQualifiedTypeName name="java.io.BufferedReader"/>
-<fullyQualifiedTypeName name="java.lang.Math"/>
 <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
 <fullyQualifiedTypeName name="Binary2Octal"/>
 <fullyQualifiedTypeName name="java.lang.String"/>
@@ -16,7 +15,12 @@
 <fullyQualifiedTypeName name="java.util.regex.Pattern"/>
 <fullyQualifiedTypeName name="java.util.regex.Matcher"/>
 <fullyQualifiedTypeName name="com.numberconvert.util.Hexa2Decimal"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
 <fullyQualifiedTypeName name="java.lang.Integer"/>
+<fullyQualifiedTypeName name="com.getfabonacci.Fabonacci"/>
+<fullyQualifiedTypeName name="com.getfabonacci.util.FibonacciOverflow"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="NumberThoery"/>
+<fullyQualifiedTypeName name="com.math.util.PrimeCheck"/>
 </qualifiedTypeNameHistroy>

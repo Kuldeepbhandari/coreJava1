@@ -1,0 +1,21 @@
+
+public class PrimeFactor {
+
+	public static int getFactor(int posInt)
+	{
+		int upparBound=100;
+		for(int i=1;i<100;i++){
+			int count=0;
+			if(posInt%i==0)
+			{
+				count++;
+			}
+			if(count==2)
+			{
+				System.out.println(i);
+			}
+		}
+		return 0;
+		
+	}
+}

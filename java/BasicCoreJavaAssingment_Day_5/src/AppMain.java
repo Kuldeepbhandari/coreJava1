@@ -1,6 +1,6 @@
-import com.getfabonacci.util.FibonacciOverflow;
-import com.getfabonacci.util.GetFabonacci;
-import com.math.util.PrimeCheck;
+import com.dateutil.com.DateUtil;
+
+
 
 
 public class AppMain {
@@ -20,9 +20,11 @@ public class AppMain {
 		/*SpecialSeries.getSeries(1, 5);
 		*/
 		
-		//********************* NumberThoery ********************
-		//NumberThoery.printPerfectList(1000);
-		NumberThoery.neitherDeficient(1000);
+		// ********************** DateUtil *********************
+		//System.out.println(DateUtil.isValidDate(1996, 23, 35));
+		//System.out.println(DateUtil.getCentury(2000));
+		System.out.println(DateUtil.getMonth(6, 2000));
+		
 		
 	
 		
@@ -32,6 +34,23 @@ public class AppMain {
 		
 		//************************ PrimeCheck *******************************
 		/*PrimeCheck.isPrime(10000);*/
+		
+		//************************** PrimeFactor *****************************
+		/*PrimeFactor.printFactor(100);*/
+		
+		
+		//***************************** IsPrime **********************************
+		//IsPrime.getPrime(10000);
+		//IsPrime.PerfectPrimeFactorList(100);
+		//IsPrime.PerfectPrimeFactorList(100);
+		
+		
+		//************************* DateUtil **********************************
+		/*DateUtil.isLeapYear(2000);*/
+		
+		//********************** Gcd ************************
+		//Gcd.gcd(99,88);
+		//System.out.println(Gcd.gcd(99,88));
 	}
 
 }

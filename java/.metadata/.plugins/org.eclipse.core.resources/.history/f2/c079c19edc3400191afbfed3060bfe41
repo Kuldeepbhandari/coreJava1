@@ -1,0 +1,29 @@
+package com.dateutil.com;
+
+public class DateUtil {
+	public static String strMonths[]={"Jan", "Feb", "Mar", "Apr", "May", "Jun",
+        "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+
+	public static int daysInMonths[]
+		      = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
+
+
+	public static boolean isLeapYear(int year)
+	{
+		for(int i=1;i<year;i++)
+		{
+			if(year %4==0 &&  year %400==0)
+			{
+				System.out.println("leap year");
+			}
+		}
+		return true;
+	}
+	/*public boolean isValidate(int year, int month, int day)
+	{
+		
+		
+		return true;
+		
+	}*/
+}

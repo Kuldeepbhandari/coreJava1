@@ -1,0 +1,19 @@
+package com.anr.threadexa;
+
+public class CheckSleepLowePriorityFirst implements  Runnable {
+
+	@Override
+	public void run() {
+		try {
+			synchronized (this) {
+			
+			}
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		// TODO Auto-generated method stub
+		System.out.println(Thread.currentThread().getName());
+	}
+
+}

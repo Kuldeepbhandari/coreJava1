@@ -1,0 +1,33 @@
+package com.anr.util;
+
+import java.io.IOException;
+
+import com.anr.entity.Student;
+
+public class StudentUtil {
+Student stu;
+public  Student[] stuDetails() throws IOException
+{
+	String data=ReadContent.readContent("student.csv");
+	String []str=data.split("\n");
+	Student student[]=new Student[str.length];
+	for(int k=1;k<str.length;k++)
+	{
+		String str1[]=str[k].split(",");
+		int i=0;
+		student[k]=new Student(Integer.parseInt(str1[i]),str1[++i],str1[++i],str1[++i]);
+	}
+	return student;
+}
+	public static void sort(Student student[])
+	{
+		for(int i=0, j=i+1;i<student.length;i++,j++){	
+		if(student[i].getId()<student[j].getId())
+		{
+			Student temp=student[i];
+			student[i]=student[j];
+			student[j]=temp;
+		}	
+	}
+}
+	}

@@ -134,14 +134,14 @@ public class DateUtil {
 	}
      return year;
 	}
-	public static int getDayOfWeek(int year ,int month,int day)
+	public static String getDayOfWeek(int year ,int month,int day)
 	{
+		if(DateUtil.isValidDate(year, month, day)){
 		
-		
-		if(isValidDate(year, month, day))
-		
-			int d=(6+DateUtil.getYear(year)+DateUtil.getYear(year))/4 + month + day)%7);
+			int  a=(DateUtil.getCentury(year) + year%100 + year%100 /4 + (DateUtil.getMonth(month, year))%7);
 	}
+		return null;
 	
+}
 }
 

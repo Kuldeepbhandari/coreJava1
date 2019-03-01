@@ -1,0 +1,24 @@
+package com.anr.application;
+
+import java.io.IOException;
+import java.util.Scanner;
+
+import com.anr.util.ReadContent;
+
+public class ReadContentMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ 
+		System.out.println("Enter the file Name");
+		Scanner s=new Scanner(System.in);
+		String fName=s.next();
+		try {
+			ReadContent.readContent(fName);
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

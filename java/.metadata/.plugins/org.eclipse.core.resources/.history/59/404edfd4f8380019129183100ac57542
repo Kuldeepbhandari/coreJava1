@@ -1,0 +1,21 @@
+package com.anr.entity;
+
+public class Account implements Runnable {
+
+	private int amount;
+	public Account(int amount)
+	{
+		this.amount=amount;
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	
+	}
+
+	
+

@@ -1,0 +1,16 @@
+
+public class MyThreadMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			MyThread t=new MyThread();
+			MyThread t1=new MyThread();
+			MyThread t2=new MyThread();
+			t1.start();
+			t.start();
+			t2.start();
+			
+			
+	}
+
+}

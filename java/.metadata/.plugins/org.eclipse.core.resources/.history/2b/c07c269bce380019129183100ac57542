@@ -1,0 +1,28 @@
+
+public class ThreadSynchronizationMain {
+
+	public static void main(String[] args) {
+		Runnable run=new ThreadSynchronization();
+		Thread t=new Thread(run,"Dark");
+		Thread t1=new Thread(run,"knight");
+		Thread t2=new Thread(run,"Batman");
+		Thread t3=new Thread(run,"joker");
+		Thread t4=new Thread(run,"Hulk");
+		Thread t5=new Thread(run,"thor");
+		Thread t6=new Thread(run,"loki");
+		Thread t7=new Thread(run,"hell");
+		Thread t8=new Thread(run,"capt");
+		Thread t9=new Thread(run,"america");
+		t.start();
+		t1.start();
+		t2.start();
+		t3.start();
+		t4.start();
+		t5.start();
+		t6.start();
+		t7.start();
+		t8.start();
+		t9.start();
+		
+	}
+}

@@ -1,0 +1,16 @@
+package com.anr.util;
+
+import java.io.BufferedInputStream;
+import java.io.File;
+import java.io.IOException;
+
+public class ConcateFile {
+public static void concatFile(String file) throws IOException
+{
+	File f=new File(file);
+	
+	f.createNewFile();
+	
+	
+}
+}

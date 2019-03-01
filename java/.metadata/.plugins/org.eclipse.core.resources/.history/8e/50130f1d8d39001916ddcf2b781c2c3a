@@ -1,0 +1,47 @@
+package com.anr.entity;
+
+public class Account implements Runnable {
+
+	private int amount;
+	int withDrawAmount;
+	public Account(int amount)
+	{
+		this.amount=amount;
+	}
+	@Override
+	public void run() {
+		depositAmount(amount);
+		withdrawAmount(amount);
+	}
+
+	private void withdrawAmount(int amount) {
+		if(amount>1000)
+		{
+			amount=amount-500;
+			System.out.println("The withdraw amount is "+amount);
+		}
+	}
+
+	synchronized void depositAmount(int amount) {
+		if(amount<1000)
+		{
+			try
+			{
+				synchronized (this) {
+					System.out.println("low balance");
+					System.out.println("plz Deposit amount");
+					int depositamount=1500+amount;
+					System.out.println(depositamount);
+					notify();
+				}
+			}catch(Exception e)
+			{
+				System.out.println(e);
+			}
+			
+		}
+	}
+	}
+
+	
+

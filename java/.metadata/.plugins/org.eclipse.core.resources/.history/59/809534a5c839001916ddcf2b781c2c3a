@@ -1,0 +1,27 @@
+
+public class WriteFile {
+	ublic class FileWriterExp 
+	{
+	public static void main(String str[])
+	{
+		try
+		{
+			FileWriter fileWriter=new FileWriter("hello1.",true);
+			BufferedWriter bufferedWriter=new BufferedWriter(fileWriter);
+			Scanner scanner=new Scanner(System.in);
+			String data=null;
+			while((data=scanner.nextLine())!="stop")
+			{
+				bufferedWriter.write(data);
+				bufferedWriter.newLine();
+                     bufferedWriter.flush();
+			}
+		}
+		catch (Exception e) {
+		e.printStackTrace();
+		}
+	}
+
+}
+
+}

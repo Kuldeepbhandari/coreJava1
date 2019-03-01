@@ -1,0 +1,10 @@
+
+public class CheckLongLastingMain {
+public static void main(String[] args) {
+	Runnable run=new CheckLongLastingMain();
+	
+}
+
+
+
+}

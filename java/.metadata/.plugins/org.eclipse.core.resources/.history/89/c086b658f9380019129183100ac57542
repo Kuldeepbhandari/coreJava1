@@ -1,0 +1,38 @@
+package com.anr.entity;
+
+public class Account implements Runnable {
+
+	private int amount;
+	public Account(int amount)
+	{
+		this.amount=amount;
+	}
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		depositAmount(amount);
+		withdrawAmount(amount);
+	}
+
+	private void withdrawAmount(int amount) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	private void depositAmount(int amount) {
+		// TODO Auto-generated method stub
+		if(amount<1000)
+		{
+			System.out.println("low balance");
+			System.out.println("Deposit amount");
+			int depositamount=1500+amount;
+			System.out.println(depositamount);
+		}
+	}
+	
+	
+	}
+
+	
+

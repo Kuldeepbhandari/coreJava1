@@ -1,0 +1,12 @@
+import java.io.BufferedReader;
+import java.io.FileReader;
+
+
+public class ReadingFromaTextFile {
+public static void main(String[] args) {
+	FileReader f=new FileReader("hello1.txt");
+	BufferedReader in=new BufferedReader(f);
+	String line=in.readLine();
+	
+}
+}

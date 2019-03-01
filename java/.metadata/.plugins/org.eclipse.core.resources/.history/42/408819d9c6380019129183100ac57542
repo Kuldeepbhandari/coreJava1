@@ -1,0 +1,13 @@
+package com.anr.util;
+
+import com.anr.entity.Account;
+
+public class AccountUtil {
+	Account ac;
+	public boolean withdraw()
+
+{
+		
+	return true;
+		}
+}

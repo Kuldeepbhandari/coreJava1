@@ -1,11 +1,16 @@
 package com.anr.entity;
 
+/**
+ * @author ANR36
+ *
+ */
 public class Student {
 private int id;
 private String fName;
 private String lName;
 public Student(){
 }
+
 
 public Student(int id, String fName, String lName) {
 	super();

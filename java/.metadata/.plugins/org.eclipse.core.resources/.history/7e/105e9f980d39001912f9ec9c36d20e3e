@@ -1,0 +1,16 @@
+import com.anr.threadexa.CheckLongLasting;
+
+
+public class CheckLongLastingMain {
+public static void main(String[] args) {
+	Runnable run=new CheckLongLasting();
+	Thread arr[]=new Thread[5];
+	 arr[1].setPriority(Thread.MAX_PRIORITY);
+	 arr[2].setPriority(Thread.MAX_PRIORITY);
+	 arr[1].start();
+	
+}
+
+
+
+}

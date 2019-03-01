@@ -1,0 +1,30 @@
+package com.anr.util;
+
+import java.io.File;
+
+public class ConcateFile {
+
+	public static void main(String[] args) {
+		System.out.println(args.length);
+		StringBuilder sb=new StringBuilder();
+		String data="";
+		File f=new File(args[args.length-1]);
+		try
+		{
+			f.createNewFile();
+			for(int i=0;i<args.length;i++)
+			{
+				data=ReadFile.readFile(args[i], data);
+				sb.append(data);
+				
+			}
+			System.out.println(sb);
+			String str1=sb.toString();
+			ReadFile.readFile(args[args.length-1],str1);
+		}
+		catch(Exception e)
+		{
+			System.out.println(e);
+		}
+	}
+}

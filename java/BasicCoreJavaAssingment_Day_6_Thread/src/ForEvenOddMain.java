@@ -1,0 +1,24 @@
+import com.anr.threadexa.ForEven;
+import com.anr.threadexa.ForOdd;
+
+
+public class ForEvenOddMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		 Runnable run=new ForEven();
+		 Runnable run1=new ForOdd();
+		 Thread t=new Thread(run);
+		 Thread t1=new Thread(run1);
+		 t.start();
+		 try {
+			t.join();
+		} catch (InterruptedException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		
+		 t1.start();
+	}
+
+}

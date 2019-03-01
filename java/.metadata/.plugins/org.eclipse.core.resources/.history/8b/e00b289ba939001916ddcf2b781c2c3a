@@ -1,0 +1,46 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.FileWriter;
+import java.io.IOException;
+public class FileReadWriteApplication {
+
+	public static String readFile(String fileName) throws IOException {
+		FileInputStream file=new FileInputStream(fileName);
+		byte b[]=new byte[file.available()];
+		file.read(b);
+		return new String(b);	
+	/*	FileReader fr=new FileReader(fileName);
+	     BufferedReader br=new BufferedReader(fr);
+	     String line="";
+	     StringBuilder sb=new StringBuilder();
+	     while((line=br.readLine())!=null){
+	    	 sb.append(line);
+	     }
+	     return sb.toString();*/
+	}
+	public static void writeFile(String fileName,String data) throws Exception{
+		/*FileOutputStream out=new FileOutputStream(fileName);
+		out.write(data.getBytes(),2,data.length()-2);
+		out.flush();
+		out.close();*/
+		FileWriter fw=new FileWriter(fileName);
+		fw.write(data);
+		fw.flush();
+		fw.close();
+	}
+	
+public static void main(String[] args) {
+	String data;
+	try {
+		data = readFile("StudentRecord.csv");
+		System.out.println(data);
+		//writeFile("record.txt",data);
+	} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+}
+}
+
+

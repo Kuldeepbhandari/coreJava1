@@ -1,0 +1,29 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+import java.util.Scanner;
+
+
+public class ReadFile {
+public static void main(String[] args) throws IOException {
+	String fName;
+	Scanner s =new Scanner(System.in);
+	System.out.println("Enter the file Name");
+	fName=s.nextLine();
+	boolean line=false;
+	
+	try {
+		FileReader fr=new FileReader(fName);
+		BufferedReader br=new BufferedReader(fr);
+		while(line=br.readLine()!=null)
+		{
+			
+		}
+	} catch (FileNotFoundException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+	
+}
+}

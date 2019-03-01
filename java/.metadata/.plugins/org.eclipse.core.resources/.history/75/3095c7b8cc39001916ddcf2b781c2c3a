@@ -1,0 +1,14 @@
+import java.io.BufferedReader;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.IOException;
+
+
+public class ReadingFromaTextFile {
+public static void main(String[] args) throws IOException {
+	FileReader f=new FileReader("hello1.txt");
+	BufferedReader in=new BufferedReader(f);
+	String line=in.readLine();
+	
+}
+}

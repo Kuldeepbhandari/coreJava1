@@ -1,0 +1,14 @@
+package com.anr.util;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+public class ReadFile {
+	public static String readFile(String fName, String str1) throws IOException {
+		FileInputStream file=new FileInputStream(fName);
+		byte b[]=new byte[file.available()];
+		file.read(b);
+		return new String(b);
+	}
+}

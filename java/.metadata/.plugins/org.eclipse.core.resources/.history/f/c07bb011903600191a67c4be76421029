@@ -1,0 +1,11 @@
+class MyThread implements Runnable
+{
+	public void run(){
+		//synchronized (this) {
+			String s="DarkkNight";
+		for(int i=0;i<s.length();i++){
+		System.out.println(s.charAt(i));
+	}}
+	//}
+}
+

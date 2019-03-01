@@ -1,0 +1,30 @@
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+
+
+public class FileRead {
+
+	public static void readFile(String fileName) throws IOException
+	{
+		FileInputStream f=new FileInputStream(fileName);
+	
+		byte b[]=new byte[f.available()];
+		f.read(b);
+		for(int i=0;i<b.length;i++)
+		{
+			System.out.print((char)b[i]);
+		}
+	}
+	//-_---------------------------------------- Second way to read a file----------------
+	
+	public static void main(String[] args) {
+		FileRead fr=new FileRead();
+		try {
+			fr.readFile("hello1.txt");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

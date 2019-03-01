@@ -1,0 +1,39 @@
+import java.io.File;
+import java.util.Scanner;
+
+
+	class FileOperation extends Thread {
+	    public static Student registerFile(File file)
+	 {
+	Student kid=null;
+	String FirstName="";
+	String LastName="" ;
+	double GPA=0.0d;
+	int id=0;
+	try
+	{
+	       
+	       Scanner scnr = new Scanner(file);
+	        System.out.println("Enter information about the student");
+	        System.out.println("Student ID: ");
+	         sleep(100);
+	         id = scnr.nextInt();
+	        System.out.println("First Name: ");
+	         FirstName = scnr.next();
+	             sleep(100);
+	        System.out.println("Last Name: ");
+	        LastName = scnr.next();    
+	         sleep(100);
+	        System.out.print(" Grade point average: ");
+	         GPA = scnr.nextDouble();
+	           
+	        }
+	catch(Exception xx)
+	{
+	System.out.println(xx.getMessage());
+	}
+	kid = new Student(id,FirstName ,LastName,GPA);
+	        return kid;
+	    }
+}
+

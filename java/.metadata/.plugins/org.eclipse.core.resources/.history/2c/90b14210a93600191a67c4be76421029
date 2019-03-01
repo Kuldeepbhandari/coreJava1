@@ -1,0 +1,19 @@
+
+public class Account {
+
+	private double balance=0;
+
+	public Account(double balance) {
+		
+		this.balance = balance;
+	}
+	
+	public synchronized void deposit(double amount)
+	{
+		if(amount<0){
+			throw new IllegalArgumentException("can't deposit");
+		}
+		this.balance+=amount;
+		System.out.println("d");
+	}
+}

@@ -1,0 +1,36 @@
+
+public class MyThread extends Thread {
+
+	/*public void run(){
+		String s="DarkKnight";
+		synchronized (this) {
+		for(int i=0;i<s.length();i++){
+			try {
+				sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.print(s.charAt(i)+" ");
+			System.out.println(Thread.currentThread().getName());
+}
+}}*/
+	
+	//second method
+	String s="darkKnight";
+	int index=0;
+	public void run(){
+		//synchronized (this) {
+		for(int i=0;i<s.length()/3;i++){
+			try {
+				sleep(1000);
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.print(s.charAt(i));
+			System.out.println(Thread.currentThread().getName());
+		}
+		}
+	}
+}

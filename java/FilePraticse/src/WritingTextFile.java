@@ -1,0 +1,33 @@
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
+
+
+public class WritingTextFile {
+	
+	//method that writes an aray of string on a file
+	public static void saveArray(String []v,String fileName) throws IOException
+	{
+		FileWriter f=new FileWriter(fileName);
+		PrintWriter out=new PrintWriter(f);
+		for(int i=0;i<v.length;i++)
+		{
+			out.print(v[i]);
+			out.close();
+			f.close();
+		}
+	}
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		
+FileWriter f=new FileWriter("hello1.txt",true); //to append the data in existing file we use true 
+PrintWriter out=new PrintWriter(f);
+
+//wrting text on file
+out.print("some text of the file hello how are u");
+out.close();
+f.close();
+WritingTextFile.saveArray(args,"hello1.txt");
+	}
+
+}

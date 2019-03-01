@@ -1,0 +1,21 @@
+
+public class ThreadOddEven  implements Runnable{
+
+	@Override
+	public void run() {
+		 isOdd();
+		 isEven();
+	}
+
+	private boolean isEven() {
+		// TODO Auto-generated method stub
+		for(int i=1;i)
+	}
+
+	private void isOdd() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+
+}

@@ -1,0 +1,22 @@
+package com.anr.application;
+
+import com.anr.customexception.NotMatch;
+import com.anr.entity.DisplayColor;
+
+public class DisplayColorMain {
+	public static void display(char c) throws NotMatch
+	{
+		if(!DisplayColor.getColor(c))
+		{
+			throw new NotMatch("color is not matched"); 
+		}
+		else
+		{
+			System.out.println("Color is  match");
+		}
+	}
+	public static void main(String[] args) throws NotMatch {
+		DisplayColorMain.display('g');
+		
+	}
+}

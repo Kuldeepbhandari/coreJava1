@@ -1,0 +1,5 @@
+package com.anr.application;
+
+public class ThreadPriority implements Runnable {
+
+}

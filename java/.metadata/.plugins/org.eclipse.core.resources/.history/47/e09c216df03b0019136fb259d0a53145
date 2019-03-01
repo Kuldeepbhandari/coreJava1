@@ -1,0 +1,15 @@
+package com.anr.application;
+
+import java.io.IOException;
+
+import com.anr.util.StudentUtil;
+
+public class StudentMain {
+
+	public static void main(String[] args) throws IOException {
+		// TODO Auto-generated method stub
+		StudentUtil su=new StudentUtil();
+		System.out.println(su.stuDetails());
+			}
+
+}

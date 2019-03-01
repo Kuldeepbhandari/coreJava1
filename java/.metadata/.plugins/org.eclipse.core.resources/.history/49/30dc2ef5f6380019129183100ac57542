@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+import com.anr.entity.Account;
+
+
+public class AccountMain implements Runnable {
+static Scanner s =new Scanner(System.in);
+int amount;
+synchronized void withdrawAmount(int amount)
+{
+	if(amount<1000)
+	{
+		System.out.println("Low Balance plz Deposit Amount");
+	}
+	try
+	{
+		wait();
+	}catch(Exception e)
+	{
+		System.out.println(e);
+	}
+	amount-=amount;
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Enter The amount");
+		int amount=s.nextInt();
+		
+		 
+		Runnable run=new Account(amount);
+		//Runnable run=new Account(amount,depositAmount);
+		Thread t=new Thread(run);
+		t.start();
+		
+	}
+
+	@Override
+	public void run() {
+withdrawAmount(amount);		
+	}
+
+}

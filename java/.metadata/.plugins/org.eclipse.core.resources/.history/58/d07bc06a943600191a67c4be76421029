@@ -1,0 +1,13 @@
+class MyThread extends Thread
+{
+	
+	
+	public MyThread() {
+		// TODO Auto-generated constructor stub
+	}
+
+	
+	}}
+	}
+}
+

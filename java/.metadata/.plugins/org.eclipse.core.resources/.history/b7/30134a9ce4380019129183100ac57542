@@ -1,0 +1,25 @@
+package com.anr.threadexa;
+
+public class ThreadCheckPriority4 implements Runnable {
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		highPriority();
+		lowPriority();
+		
+	}
+
+	private void lowPriority() {
+		// TODO Auto-generated method stub
+		System.out.println(Thread.currentThread().getName());
+	}
+
+	private void highPriority() {
+
+		System.out.println(Thread.currentThread().getName());
+	}
+
+	
+
+}

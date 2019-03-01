@@ -1,0 +1,27 @@
+package com.anr.application;
+
+
+
+import java.io.IOException;
+
+import com.anr.util.ReadContent;
+
+public class CompareFile {
+public static void main(String[] args) throws IOException  {
+	StringBuilder sb=new StringBuilder();
+	String data=ReadContent.readContent(args[0]);
+	String str[]=data.split("\n");
+	String data1=ReadContent.readContent(args[1]);
+	String str1[]=data.split("\n");
+	
+	for(int i=0;i<str.length;i++){
+		
+			if(!str[i].equals(str1))
+			{	
+			System.out.println(str[i]);
+			}	
+		}
+	}
+}
+
+

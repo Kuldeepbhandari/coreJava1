@@ -1,0 +1,37 @@
+import com.anr.threadexa.CheckSleepLowePriorityFirst;
+
+
+public class CheckSleepLowePriorityFirstMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Runnable runnable=new CheckSleepLowePriorityFirst();
+		Thread t=new Thread(runnable,"High Priority");
+		Thread t1=new Thread(runnable,"low Priority 1");
+		Thread t2=new Thread(runnable,"low Priority 2");
+		Thread t3=new Thread(runnable,"low Priority 3");
+		t.setPriority(Thread.MAX_PRIORITY);
+		t1.setPriority(Thread.MIN_PRIORITY);
+		t2.setPriority(Thread.MIN_PRIORITY);
+		t3.setPriority(Thread.MIN_PRIORITY);
+		
+		if(t.getPriority()>t1.getPriority())
+		{
+			t1.start();
+			t2.start();
+			t3.start();
+			try {
+				Thread.currentThread().sleep(1000);
+				
+				System.out.println(Thread.currentThread().getName());
+				t.start();
+			} catch (InterruptedException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+	}
+	}
+

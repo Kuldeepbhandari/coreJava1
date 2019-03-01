@@ -1,0 +1,13 @@
+import com.anr.threadexa.CheckLongLasting;
+
+
+public class CheckLongLastingMain {
+public static void main(String[] args) {
+	Runnable run=new CheckLongLasting();
+	
+	
+}
+
+
+
+}

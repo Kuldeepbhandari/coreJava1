@@ -1,0 +1,20 @@
+import com.anr.threadexa.ThreadCheckPriority4;
+
+
+public class ThreadCheckProirityMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Runnable run=new ThreadCheckPriority4();
+		Thread t=new Thread(run,"HighPriority");
+		Thread t1=new Thread(run,"LowPriority");
+		Thread t2=new Thread(run,"LowPriority");
+		t1.setPriority(Thread.MAX_PRIORITY);
+		t1.getPriority();
+		t2.start();
+		t1.start();
+		t.start();
+		
+	}
+
+}

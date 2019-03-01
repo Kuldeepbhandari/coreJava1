@@ -1,0 +1,53 @@
+package com.anr.util;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class ReadContent {
+
+	public static String[] readContent(String fName) throws IOException
+	{
+		
+		/*FileInputStream file=new FileInputStream(fName);
+		byte b[]=new byte[file.available()];
+		file.read(b);
+		return new String(b);	*/
+		/*File f=new File(fName);
+		FileReader fr=new FileReader(f);
+		BufferedReader br=new BufferedReader(fr);
+		String line=null;
+		//StringBuffer sb=new StringBuffer();
+		while((line=br.readLine())!=null)
+		{
+			line=br.readLine();
+	}
+		System.out.println(line);
+		
+		return line;*/
+		FileReader f = new FileReader(fName);
+		BufferedReader in = new BufferedReader(f);
+		int n = 0;
+		String line = in.readLine();
+		while (line != null) {
+			n++; line = in.readLine(); 
+			} 
+		f.close();
+		String[] v = new String[n];
+
+		f = new FileReader(fName);
+		in = new BufferedReader(f); 
+		int i = 0; line = in.readLine();
+		while ((line != null) && (i < n)) {
+			v[i] = line; line = in.readLine();
+			i++; 
+			} 
+		f.close(); 
+		return v;
+		}
+		
+	}
+
+

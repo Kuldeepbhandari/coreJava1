@@ -1,0 +1,13 @@
+package com.anr.threadexa;
+
+public class CheckLongLasting implements Runnable {
+
+	Thread arr[]=new Thread[5];
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		System.out.println(Thread.currentThread().isAlive());
+	}
+
+}

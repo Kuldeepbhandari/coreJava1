@@ -1,0 +1,16 @@
+package com.anr.entity;
+
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class ReadContent {
+
+	public static void readContent(String fName) throws IOException
+	{
+		FileReader fr=new FileReader(fName);
+	     BufferedReader br=new BufferedReader(fr);
+	     String line=br.readLine();
+	 System.err.println(line);    
+	}
+}

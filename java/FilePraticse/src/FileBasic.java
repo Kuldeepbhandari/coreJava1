@@ -1,0 +1,26 @@
+import java.io.File;
+import java.io.IOException;
+
+
+public class FileBasic {
+ public static void readFile(String fileName) throws IOException
+ {
+	File file=new File("Myfile.txt");
+	System.out.println(file.createNewFile());
+	System.out.println(file.canRead());
+	System.out.println(file.canWrite());
+	System.out.println(file.getAbsolutePath());
+	System.out.println(file.getPath());
+	System.out.println(file.setReadOnly());
+
+}
+ public static void main(String[] args) {
+	 FileBasic fb=new FileBasic();
+	 try {
+		fb.readFile("hello.txt");
+	} catch (IOException e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+	}
+}
+}

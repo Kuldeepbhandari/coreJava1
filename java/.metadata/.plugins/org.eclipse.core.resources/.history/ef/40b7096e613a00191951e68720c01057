@@ -1,0 +1,21 @@
+package com.anr.util;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+
+public class ConcateFile {
+public static void concatFile(String file,String newFile) throws IOException
+{
+	File f=new File(file);
+	f.createNewFile();
+	
+	file.concat(newFile);
+	FileReader fr=new FileReader(file);
+	BufferedReader br=new BufferedReader(fr);
+	String line=br.readLine();
+	System.out.println(line);
+}
+}

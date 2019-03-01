@@ -10,21 +10,20 @@ public class NumberGusess {
 		System.out.println("Enter Your Guess no");
 		 gusessNo=s.nextInt();
 		  int trials=0;
-		for(int i=1;;i++){ 	
-		 if(gusessNo<secretNo)
-			{   trials++;
+		for(int i=1;i<=1;i++){ 
+			  if(gusessNo<secretNo){   
+				 trials++;
 				System.out.println("Try Higher");
 			}
-		 else if(gusessNo>secretNo)
-			{   trials++;
+		 else if(gusessNo>secretNo){  
+			 trials++;
 				System.out.print("Try Lower");
 			}
-			 else if(gusessNo==secretNo)
-				{   trials++;
-					System.out.println("You got "+trials);
-					break;
-				}
-			
+		 else if(gusessNo==secretNo){ 
+				 trials++;
+				System.out.println("You got "+trials);
+				break;
+			}
 		}
 		 
 	}

@@ -7,7 +7,7 @@ public class AppMain {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		/*NumberGusess.guess(1);*/
+		NumberGusess.guess(1);
 		
 		// *************************** Fibonacci *********************
 		/*System.out.println("******************* Fibonacci **********************");
@@ -23,7 +23,8 @@ public class AppMain {
 		// ********************** DateUtil *********************
 		//System.out.println(DateUtil.isValidDate(1996, 23, 35));
 		//System.out.println(DateUtil.getCentury(2000));
-		System.out.println(DateUtil.getMonth(6, 2000));
+		//System.out.println(DateUtil.getMonth(6, 2000));
+		System.out.println(DateUtil.getDayOfWeek(1996, 4, 23));
 		
 		
 	

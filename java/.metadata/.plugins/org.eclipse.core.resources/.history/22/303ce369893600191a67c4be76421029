@@ -1,0 +1,57 @@
+
+class A extends Thread
+{
+	public void run()
+	{
+		System.out.println("Thread A is Started");
+		for(int i=1;i<=4;i++){
+			System.out.println("From Thread A :i= "+i);
+		}
+		System.out.println("Exit From A");
+	}
+}
+class B extends Thread
+{
+	public void run()
+	{
+		System.out.println("Thread B is Started");
+		for(int i=1;i<=4;i++){
+			System.out.println("From Thread B :i= "+i);
+		}
+		System.out.println("Exit From B");
+	}
+}
+class C extends Thread
+{
+	public void run()
+	{
+		System.out.println("Thread C is Started");
+		for(int i=1;i<=4;i++){
+			System.out.println("From Thread C :i= "+i);
+		}
+		System.out.println("Exit From C");
+	}	
+	}
+
+public class ThreadPriority {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			A threada=new A();
+			B threadb=new B();
+			C threadc=new C();
+			threadc.setPriority(Thread.MAX_PRIORITY);
+			threadb.setPriority(Thread.MIN_PRIORITY);
+			threada.setPriority(threadc.getPriority()+1);
+			
+			//System.out.println("Thread A is Start");
+			threada.start();
+			
+			//System.out.println("Thread B is Start");
+			threadb.start();
+			
+			//System.out.println("Thread C is start");
+			threadc.start();
+	}
+
+}

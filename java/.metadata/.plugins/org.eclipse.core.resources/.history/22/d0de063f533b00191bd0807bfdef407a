@@ -1,0 +1,24 @@
+package com.anr.util;
+
+import com.anr.entity.Student;
+
+public class StudentUtil {
+
+	Student stu;
+	//Student arr[]=new Student[10];
+	
+	public static void searchStudent(Student id[],Student arr[])
+	{
+		for(int i=0;i<id.length;i++)
+		{
+			for(int j=i+1;j<id.length;j++)
+			{
+				if(id[i]<id[j])
+				{
+					
+				}
+			}
+		}
+	}
+	
+}

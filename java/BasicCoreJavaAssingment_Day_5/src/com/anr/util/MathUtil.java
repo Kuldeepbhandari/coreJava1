@@ -32,6 +32,15 @@ public  abstract class MathUtil {
 			}
 			return sum==num;
 		}
+		public static boolean isDeficient(int uperLimit)
+		{
+		    int sumDivisors = 0;
+		    for (int i = 1 ; i < uperLimit; i++) {
+		        sumDivisors += (uperLimit%i == 0) ? i : 0;
+		    }
+		    return (sumDivisors < uperLimit);
+		}
+		 
 	}
 
 

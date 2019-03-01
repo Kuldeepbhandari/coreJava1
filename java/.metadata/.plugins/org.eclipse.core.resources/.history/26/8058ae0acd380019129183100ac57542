@@ -1,0 +1,45 @@
+package com.anr.entity;
+
+public class Account implements Runnable{
+
+	private int amount;
+	int newAmount;
+	int balance;
+	int depositAmount;
+
+	public Account(int amount,int depositAmount)
+	{
+		this.amount=amount;
+		this.depositAmount=depositAmount;
+	}
+	
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		depositAmount(amount);
+		withdrawAmount(amount);
+	}
+
+	private void withdrawAmount(int amount ) {
+		// TODO Auto-generated method stub
+		if(amount <1000)
+		{
+			System.out.println("Cannot withdraw amount plz deposit amount");
+			depositAmount(amount,depositAmount);
+		}
+		else 
+		{
+			
+		}
+	}
+	synchronized void depositAmount(int amount ,int depositAmount) {
+		// TODO Auto-generated method stub
+		
+			
+			int  newBalance=amount+depositAmount;
+			System.out.println("deposit sucessfull and the account balance is "+newBalance);
+		}
+	}
+
+	
+

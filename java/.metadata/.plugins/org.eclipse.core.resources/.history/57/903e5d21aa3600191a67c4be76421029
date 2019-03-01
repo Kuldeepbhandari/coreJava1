@@ -1,0 +1,37 @@
+
+public class WithdrawThread {
+ 
+	private Account account;
+	private double amount;
+	public WithdrawThread(Account account, double amount) {
+		
+		this.account = account;
+		this.amount = amount;
+	}
+	 public void run()
+	 {
+		 account.withdraw(amount);
+	 }
+	
+}
+ class DepositThread implements Runnable
+{
+	 private Account account;
+		private double amount;
+		
+		
+	public DepositThread(Account account, double amount) {
+			super();
+			this.account = account;
+			this.amount = amount;
+		}
+
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		account.deposit(amount);
+	}
+
+	
+}

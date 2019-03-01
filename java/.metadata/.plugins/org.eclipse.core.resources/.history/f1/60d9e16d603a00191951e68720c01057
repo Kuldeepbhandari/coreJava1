@@ -1,0 +1,17 @@
+package com.anr.application;
+
+import java.util.Scanner;
+
+import com.anr.util.ConcateFile;
+
+public class ConcateFileMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+Scanner s=new Scanner(System.in);
+System.out.println("Enter the file name");
+String file=s.next();
+		ConcateFile.concatFile(file);
+	}
+
+}

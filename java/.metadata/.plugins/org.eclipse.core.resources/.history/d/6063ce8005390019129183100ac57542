@@ -1,0 +1,26 @@
+package com.anr.threadexa;
+
+public class ThreadSynchronization  implements Runnable{
+int count=1;
+	public void IncerementCount()
+	{
+		System.out.println(Thread.currentThread().getName()+"count="+this.count);
+	}
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		try
+		{
+			Thread.sleep(1000);
+			synchronized (this) {
+				IncerementCount();
+			}
+			
+		}catch(InterruptedException e)
+		{
+			System.out.println(e);
+		}
+	}
+
+
+}

@@ -1,0 +1,21 @@
+package com.anr.threadexa;
+
+public class ThreadSynchronization  implements Runnable{
+
+	@Override
+	public void run() {
+		// TODO Auto-generated method stub
+		printCounter();
+	}
+
+	private void printCounter() {
+		// TODO Auto-generated method stub
+		int counter=0;
+		if(Thread.currentThread().isAlive())
+		{
+			int coun=counter+counter;
+			System.out.println(coun);
+		}
+	}
+
+}

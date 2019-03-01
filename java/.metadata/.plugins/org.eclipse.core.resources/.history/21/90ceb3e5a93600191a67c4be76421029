@@ -1,0 +1,11 @@
+
+public class InternetBankingMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Account ac=new Account(10);
+		
+	}
+
+}

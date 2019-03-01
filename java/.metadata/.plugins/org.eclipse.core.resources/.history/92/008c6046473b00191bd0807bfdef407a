@@ -1,0 +1,62 @@
+package com.anr.application;
+import java.io.BufferedReader;
+import java.io.FileReader;
+import java.io.IOException;
+
+import com.anr.util.ReadContent;
+
+public class CompareFile {
+public static void main(String[] args) throws IOException  {
+
+	String data=ReadContent.readContent(args[0]);
+	String str[]=data.split("\n");
+	String data1=ReadContent.readContent(args[1]);
+	String str1[]=data1.split("\n");
+	int length=str1.length;
+	//System.out.println(length);
+	for(int i=0;i<str.length;i++){
+		System.out.println(str1[i]);
+		if(i>length-1){
+			break;
+	}
+		else if(!str[i].equalsIgnoreCase(str1[i]))
+		{
+			System.out.println(str[i]+" "+str1[i]);
+		}
+	}
+	
+	
+	/*FileReader fr=new FileReader("hfh.txt");
+	FileReader fr1=new FileReader("hello.txt");
+	BufferedReader br=new BufferedReader(fr);
+	BufferedReader br1=new BufferedReader(fr1);
+	String line=br.readLine();
+	String line1=br1.readLine();
+	boolean isEqual=true;
+	int number=1;
+	StringBuffer sb=new StringBuffer();
+	while((line=br.readLine())!=null || (line1=br1.readLine())!=null ){
+		sb.append(line);
+		if(line==null||line1==null){
+			isEqual=false;
+			break;
+		}
+		if(!line.equals(line1)){
+			isEqual=false;
+			break;
+		}
+	}
+		if(isEqual){
+			System.out.println("content is same");
+		}
+		else{
+			System.out.println("match word is "+line+ " and match word is "+line1);
+			
+		}
+		br.close();
+		br1.close();*/
+		}
+}
+
+
+
